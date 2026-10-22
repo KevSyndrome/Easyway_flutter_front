@@ -1,9 +1,10 @@
-class AppConstants {
-  static const String apiBaseUrl = 'http://localhost:8001/api/v1';
-  static const String websocketUrl = 'ws://localhost:8001';
-  static const int httpTimeout = 30;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-  static String mapboxToken = '';
+class AppConstants {
+  // Sin valores por defecto: se configuran en .env (ver .env.example).
+  static String get apiBaseUrl => dotenv.get('API_BASE_URL');
+  static String get websocketUrl => dotenv.get('WEBSOCKET_URL');
+  static const int httpTimeout = 30;
 
   static const double defaultLatitude = 19.4326;
   static const double defaultLongitude = -99.1332;

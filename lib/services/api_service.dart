@@ -10,7 +10,7 @@ class ApiService {
   final FlutterSecureStorage _storage = const FlutterSecureStorage();
   final http.Client _client = http.Client();
 
-  String _baseUrl = AppConstants.apiBaseUrl;
+  final String _baseUrl = AppConstants.apiBaseUrl;
   String? _accessToken;
   String? _refreshToken;
   bool _isRefreshing = false;

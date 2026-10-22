@@ -1,17 +1,15 @@
-# untitled
+# Easyway_flutter_front
 
-A new Flutter project.
+App Flutter de EasyWay para reportar baches en la ciudad (mapa 3D con Mapbox).
 
-## Getting Started
+## Configuración
 
-This project is a starting point for a Flutter application.
+1. Copia la plantilla de variables de entorno y complétala con tus valores:
+   ```
+   cp .env.example .env
+   ```
+   `.env` está en `.gitignore`: nunca lo subas al repositorio.
+2. `flutter pub get`
+3. `flutter run`
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Las especificaciones del proyecto están en `docs/`.
