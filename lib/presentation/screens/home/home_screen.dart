@@ -70,7 +70,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           Positioned.fill(
             child: MapWidget(
               key: const ValueKey('map'),
-              styleUri: MapboxStyles.MAPBOX_STREETS,
+              styleUri: MapboxStyles.STANDARD,
               viewport: CameraViewportState(
                 center: Point(
                   coordinates: Position(
@@ -79,6 +79,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   ),
                 ),
                 zoom: AppConstants.defaultZoom,
+                pitch: AppConstants.defaultPitch,
               ),
             ),
           ),
